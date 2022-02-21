@@ -1,3 +1,43 @@
+;+
+; CLASS_NAME:
+;       MLSData
+;
+; PURPOSE:
+;       An MLSData object provides a simple interface with which to
+;       load, process, and display data from the MLS Aura experiment.
+;
+; CATEGORY:
+;       Data handling and plotting.
+;
+; SUPERCLASSES:
+;       This class inherits from no other classes.
+;
+; SUBCLASSES:
+;       This class has no subclasses.
+;
+; CREATION:
+;       See MLSData::Init
+;
+; METHODS:
+;       Intrinsic Methods
+;       This class has the following methods:
+;
+;
+; USAGE:
+;   These programs are designed for use with MLS retrievals. There is no guarantee they
+;   will work properly with other versions of the data. Ideally, the user will only need to interact
+;   with the following methods to generate plots and analyze data:
+;
+;
+;
+; DEPENDENCIES:
+;
+;       The readl2gp routine written in IDL and available from ??
+;
+;
+; MODIFICATION HISTORY:
+;-
+
 FUNCTION MLSData::init
 
   self.raw=PTR_NEW(/ALLOCATE)
